@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bowling.Byron</title>
+</head>
+<body>
+<script>
+    "use strict";
+
+    let user1 = prompt("player 1 what is your name");
+    let user2 = prompt("player 2 what is your name");
+
+
+    alert("lets get the basics of this scoring system down. for each pin you knock down you get one point if oyu get s strike just input 10");
+    let user1round1 = prompt("what did you get for the very first bowl of the game.");
+    user1round1 = Number(user1round1);
+    while (user1round1 <= 10) {
+        if (user1round1 === 10) {
+            alert("strikeeee");
+            user1round1 = 0
+        } else {
+            let user1round2 = prompt("what did you get in the second round");
+            user1round2 = Number(user1round2);
+            if (user1round2 + user1round1 === 10) {
+                alert("spare");
+            } else {
+                document.write("good try " + user1);
+            }
+        }
+    }
+    user1round1 = 10;
+
+    let user1score1 = prompt(user1 + " what did you get in the first round");
+    user1score1 = Number(user1score1);
+    let user2score1 = prompt(user2 + " what did you get in the first round");
+    user2score1 = Number(user2score1);
+    let user1score2 = prompt(user1 + " what did you get in the second round");
+    user1score2 = Number(user1score2);
+    let user2score2 = prompt(user2 + " what did you get in the second round");
+    user2score2 = Number(user2score2);
+    let user1score3 = prompt(user1 + " what did you get in the third round");
+    user1score3 = Number(user1score3);
+    let user2score3 = prompt(user2 + " what did you get in the third round");
+    user2score3 = Number(user2score3);
+    let user1score4 = prompt(user1 + " what did you get in the fourth round");
+    user1score4 = Number(user1score4);
+    let user2score4 = prompt(user2 + " what did you get in the fourth round");
+    user2score4 = Number(user2score4);
+    let user1score5 = prompt(user1 + " what did you get in the fifth round");
+    user1score5 = Number(user1score5);
+    let user2score5 = prompt(user2 + " what did you get in the fifth round");
+    user2score5 = Number(user2score5);
+    let user1score6 = prompt(user1 + " what did you get in the sixth round");
+    user1score6 = Number(user1score6);
+    let user2score6 = prompt(user2 + " what did you get in the sixth round");
+    user2score6 = Number(user2score6);
+    let user1score7 = prompt(user1 + " what did you get in the seventh round");
+    user1score7 = Number(user1score7);
+    let user2score7 = prompt(user2 + " what did you get in the seventh round");
+    user2score7 = Number(user2score7);
+    let user1score8 = prompt(user1 + " what did you get in the eighth round");
+    user1score8 = Number(user1score8);
+    let user2score8 = prompt(user2 + " what did you get in the eighth round");
+    user2score8 = Number(user2score8);
+    let user1score9 = prompt(user1 + " what did you get in the ninth round");
+    user1score9 = Number(user1score9);
+    let user2score9 = prompt(user2 + " what did you get in the ninth round");
+    user2score9 = Number(user2score9);
+    let user1score10 = prompt(user1 + " what did you get in the final round");
+    user1score10 = Number(user1score10);
+    let user2score10 = prompt(user2 + " what did you get in the final round");
+    user2score10 = Number(user2score10);
+    document.write("the scores are in lets see what you guys got");
+    document.write("</br>");
+    // need this to not be a string (same with one below it) fixed
+    let finalscoreuser1 = (user1score1 + user1score2 + user1score3 + user1score4 + user1score5 + user1score6 + user1score7 + user1score8 + user1score9 + user1score10);
+    let finalscoreuser2 = (user2score1 + user2score2 + user2score3 + user2score4 + user2score5 + user2score6 + user2score7 + user2score8 + user2score9 + user2score10);
+    document.write(user1 + " you got........" + finalscoreuser1);
+    document.write("</br>");
+    document.write(user2 + " you got........" + finalscoreuser2);
+
+
+</script>
+</body>
+</html>
